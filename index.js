@@ -26,7 +26,7 @@ const addNewGoal = () => {
     // Check if the goalInput already exists in the list
     for (let goal of existingGoals) {
         if (goal.textContent === goalInput) { // Check for duplicate text content
-            alert('This goal already exists! Please enter a new goal.'); // Display alert for duplicate
+            alert('This goal already exists!'); // Display alert for duplicate
             document.querySelector('#goalInput').value = "";
             return; // Exit the function if duplicate is found
         }
