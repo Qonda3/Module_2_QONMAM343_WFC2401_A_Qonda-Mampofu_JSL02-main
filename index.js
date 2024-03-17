@@ -19,7 +19,7 @@ document.querySelector('#submitWorkout').addEventListener('click', displayWorkou
 // NOW LET'S DEBUG TO PREVENT DUPLICATE GOALS FROM BEING SUBMITTED 🚀
 
 const addNewGoal = () => {
-    const goalInput = document.querySelector('#goalInput').value; // Trim any leading or trailing whitespace
+    const goalInput = document.querySelector('#goalInput').value; // get value in current input
     const goalList = document.querySelector('#goalList');
     const existingGoals = goalList.querySelectorAll('li'); // Retrieve all existing goals
 
